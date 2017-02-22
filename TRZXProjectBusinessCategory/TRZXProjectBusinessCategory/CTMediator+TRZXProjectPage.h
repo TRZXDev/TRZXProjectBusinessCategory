@@ -10,6 +10,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CTMediator (TRZXProjectPage)
-- (UIViewController *)projectPageViewController;
+- (UIViewController *)projectPageViewController:(NSString *)projectTitle;
 
 @end

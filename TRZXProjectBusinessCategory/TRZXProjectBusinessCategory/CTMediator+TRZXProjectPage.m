@@ -9,7 +9,10 @@
 #import "CTMediator+TRZXProjectPage.h"
 
 @implementation CTMediator (TRZXProjectPage)
-- (UIViewController *)projectPageViewController{
-    return [self performTarget:@"TRZXProjectPage" action:@"ProjectPageViewController" params:nil shouldCacheTarget:NO];
+- (UIViewController *)projectPageViewController:(NSString *)projectTitle{
+
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    params[@"projectTitle"] = projectTitle;
+    return [self performTarget:@"TRZXProjectPage" action:@"ProjectPageViewController" params:params shouldCacheTarget:NO];
 }
 @end
