@@ -9,7 +9,7 @@
 #import "CTMediator+TRZXProjectPage.h"
 
 @implementation CTMediator (TRZXProjectPage)
-- (UIViewController *)projectPageController{
-    return [self performTarget:@"TRZXProjectPage" action:@"ProjectPageController" params:nil shouldCacheTarget:NO];
+- (UIViewController *)projectPageViewController{
+    return [self performTarget:@"TRZXProjectPage" action:@"ProjectPageViewController" params:nil shouldCacheTarget:NO];
 }
 @end
